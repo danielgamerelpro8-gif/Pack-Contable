@@ -1,0 +1,150 @@
+/* Fuente formal y legible */
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #7e8a76a9;
+  color: #2d2d2d;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #e8eff7;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #d0dae6;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #1f3b57;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1f3b57;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #3b7bbf;
+}
+
+/* Secciones */
+section, article, div {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #1f3b57;
+  border-left: 4px solid #3b7bbf;
+  padding-left: 8px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin: 6px 0;
+}
+/* Galería de videos */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.video-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  outline: none;
+}
+
+.video-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333333;
+  font-style: italic;
+}
+
+/* Destacar precios y promociones */
+h1, h2, h3 {
+  font-family: "Merriweather", "Georgia", serif;
+}
+
+p strong {
+  color: #000000;
+}
+/* Contenedor de imágenes en columna */
+.image-container {
+  display: flex;
+  flex-direction: column;  /* Apila las imágenes verticalmente */
+  align-items: center;     /* Centra las imágenes en el medio */
+  margin: 20px auto;
+  gap: 20px;               /* Espacio entre imágenes */
+}
+
+/* Imágenes dentro del contenedor */
+.image-container img {
+  max-width: 100%;         /* Que no se salgan del ancho de la página */
+  height: auto;            /* Mantiene la proporción original */
+  border-radius: 10px;     /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover */
+.image-container img:hover {
+  transform: scale(1.03);  /* Zoom suave */
+}
+
+
+footer {
+  background-color: #e8eff7;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  border-top: 2px solid #d0dae6;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
